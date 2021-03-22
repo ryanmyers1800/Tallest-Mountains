@@ -1,3 +1,4 @@
+//object array to define the ten tallest mountains in the United States
 const mountains = [
     {rank:1, name:'Denali', Range:'Alaska Range', Elevation:'20,310 ft.'},
     {rank:2, name:'Mount Saint Elias', Range:'Saint Elias Mountains', Elevation:'18,009 ft.'},

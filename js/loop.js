@@ -1,3 +1,4 @@
+//loop to display the object array which shows information about mountains
 let html = ' ';
 
 for ( let i = 0; i < mountains.length; i++ ) {
