@@ -1,4 +1,10 @@
+* {
+    box-sizing: border-box;
+}
 
+body {
+    background-color: rgb(236, 221, 221);
+}
 
 h1 {
     border-bottom: solid 1px black;
@@ -6,6 +12,18 @@ h1 {
     padding-top: 20px;
 }
 
-h3:nth-child(n+2) {
+div {
     border-bottom: solid 1px black;
 }
+/*
+@media screen and (min-width: 600px) {
+    h1 {
+        text-align:center;
+        font-size: 40px;
+    }
+    div {
+        display:flex;
+        flex-direction: row;
+    }
+}
+
