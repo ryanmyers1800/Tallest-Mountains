@@ -51,9 +51,6 @@ li {
     border-bottom-color:blue;
 }
 
-div {
-    padding-left: 5em;
-}
 
 /*media queries*/
 
@@ -72,6 +69,13 @@ div {
     }
     .nav a {
         border-bottom-color: transparent;
+    }
+    .main-content {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        justify-content: space-around;
     }
 }   
 
