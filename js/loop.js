@@ -8,8 +8,13 @@ for ( let i = 0; i < mountains.length; i++ ) {
     <h2>${mount.rank}. ${mount.name}</h2>
     <h3>Mountain Range: ${mount.Range}</h3>
     <h3>Elevation: ${mount.Elevation}</h3>
+    <img src="${mount.photo}">
     </div>
     `;
 }
 
-document.querySelector('main').insertAdjacentHTML('beforeend', html);
+document.querySelector('article').insertAdjacentHTML('beforeend', html);
+
+
+
+
