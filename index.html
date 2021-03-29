@@ -19,15 +19,18 @@
         </nav>    
     </header>
     <h1>Ten Tallest Mountains in the United States</h1>
-    <article>
+    <article class="main-content">
 
     </article>
-    <section class="form-container">
+    <section  class="form-container">
+        <span id="newsletter">
+
+        </span>
         <form  name="form1" action="email">
             <h3>Subscribe to our news letter!</h3>
-            <label for="email">email:</label>
+            <label for="email"><strong>email:</strong></label>
             <input type="text" id="email" name="text1">
-            <input type="submit" name="submit"  onclick="validateEmail(document.form1.text1)">
+            <button type="submit" name="submit" onclick="validateEmail(document.form1.text1)">Submit</button>
         </form>
     </section>
     <script src="js/mountains.js"></script>

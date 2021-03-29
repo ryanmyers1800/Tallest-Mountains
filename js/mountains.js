@@ -13,19 +13,43 @@ const mountains = [
 ]
 
 
+//loop to display the object array which shows information about mountains
+let html = ' ';
+
+for ( let i = 0; i < mountains.length; i++ ) {
+    let mount = mountains[i];
+    html += `
+    <div>
+    <h2>${mount.rank}. ${mount.name}</h2>
+    <h3>Mountain Range: ${mount.Range}</h3>
+    <h3>Elevation: ${mount.Elevation}</h3>
+    <img src="${mount.photo}">
+    </div>
+    `;
+}
+
+document.querySelector('article').insertAdjacentHTML('beforeend', html);
 
 
 
 
 
 
+
+//function to validate email address
 function validateEmail(inputText) {
-    const mailformat = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
-    if(inputText.value.match(mailformat)) {
-        alert('your email is valid!');
-        return true;
-    } else {
+    const mailFormat = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
+    if(inputText.value.match(mailFormat)) {
+        let message =`<h2>Thank you for subscribing!</h2>`;
+        document.querySelector('form').innerHTML = message;
+        } else {
         alert('You have entered an invalid email!');
         return false;
     }
 }
+
+
+
+
+
+

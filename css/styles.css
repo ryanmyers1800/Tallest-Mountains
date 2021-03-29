@@ -51,6 +51,11 @@ li {
     border-bottom-color:blue;
 }
 
+.form-container {
+    padding-left: 3em;
+    padding-bottom: 3em;
+    padding-top: 2em;
+}
 
 /*media queries*/
 
@@ -75,7 +80,8 @@ li {
         flex-direction: row;
         flex-wrap: wrap;
         flex-basis: 100%;
-        justify-content: space-around;
+        justify-content: space-between;
+        flex: 2;
     }
 }   
 
