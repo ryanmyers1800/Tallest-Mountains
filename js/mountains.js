@@ -1,6 +1,6 @@
 //array to define the ten tallest mountains in the United States
 const mountains = [
-    {rank:1, name:'Denali', Range:'Alaska Range', Elevation:'20,310 ft.', photo:'images/Mount-Mckinley.jpg'},
+    {rank:1, name:'Denali', Range:'Alaska Range', Elevation:'20,310 ft.', photo:'images/Denali.jpg'},
     {rank:2, name:'Mount Saint Elias', Range:'Saint Elias Mountains', Elevation:'18,009 ft.', photo:'images/Mount-Saint-Elias.jpg'},
     {rank:3, name:'Mount Foraker', Range:'Alaska Range', Elevation:'17,400 ft.', photo:'images/Mount-Foraker.jpg'},
     {rank:4, name:'Mount Bona', Range:'Saint Elias Mountains', Elevation:'16,500 ft.', photo:'images/Mount-Bona.jpg'},
