@@ -12,6 +12,15 @@ li {
     list-style-type: none;
 }
 
+img {
+    max-width: 100%;
+    padding: 1em;
+}
+
+div {
+    font-size:large;
+}
+
 /*class selectors*/
 
 .main-header,
@@ -74,14 +83,6 @@ li {
     }
     .nav a {
         border-bottom-color: transparent;
-    }
-    .main-content {
-        display:flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        flex-basis: 100%;
-        justify-content: space-between;
-        flex: 2;
     }
 }   
 
