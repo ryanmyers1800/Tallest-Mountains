@@ -21,6 +21,9 @@ div {
     font-size:large;
 }
 
+footer {
+    padding: 2em;
+}
 /*class selectors*/
 
 .main-header,
