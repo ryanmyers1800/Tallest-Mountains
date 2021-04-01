@@ -1,4 +1,4 @@
-//object array to define the ten tallest mountains in the United States
+//array to define the ten tallest mountains in the United States
 const mountains = [
     {rank:1, name:'Denali', Range:'Alaska Range', Elevation:'20,310 ft.', photo:'images/painted-bill.jpg'},
     {rank:2, name:'Mount Saint Elias', Range:'Saint Elias Mountains', Elevation:'18,009 ft.', photo:'images/painted-bill.jpg'},
@@ -13,7 +13,7 @@ const mountains = [
 ]
 
 
-//loop to display the object array which shows information about mountains
+//for loop to display the mountains array
 let html = ' ';
 
 for ( let i = 0; i < mountains.length; i++ ) {
@@ -31,22 +31,28 @@ for ( let i = 0; i < mountains.length; i++ ) {
 document.querySelector('article').insertAdjacentHTML('beforeend', html);
 
 
-
-
-
-
-
 //function to validate email address
+//mailFormat variable defines regular expression that assesses email address validity
+//if-else statement executes different outcomes based on valid or invalid email submission
+//valid email submission will activate the document.querySelector method displaying a "thank you" message which replaces the form element
+//invalid email submission will activate the document.write method used to display invalid email message and a link to the home page
 function validateEmail(inputText) {
     const mailFormat = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
     if(inputText.value.match(mailFormat)) {
         let message =`<h2>Thank you for subscribing!</h2>`;
         document.querySelector('form').innerHTML = message;
         } else {
-        alert('You have entered an invalid email!');
+        document.write(`<h2>That is not a valid email address</h2>`);
+        document.write(`<a href="index.html">back to home</a>`);
         return false;
     }
 }
+
+
+
+
+
+
 
 
 

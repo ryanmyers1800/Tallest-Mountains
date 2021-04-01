@@ -12,27 +12,25 @@
         <img class="site-logo" src="images/Mountain-logo.png" alt="mountain logo">
         <nav>    
             <ul class="nav">
-                <li><a href="#">link 1</a></li>
-                <li><a href="#">link 2</a></li>
-                <li><a href="#">link 3</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">conservation</a></li>
+                <li><a href="#">recreation</a></li>
             </ul>
         </nav>    
     </header>
-    <h1>Ten Tallest Mountains in the United States</h1>
+    <h1>Ten tallest mountains in the United States</h1>
     <article class="main-content">
 
     </article>
     <section  class="form-container">
-        <span id="newsletter">
-
-        </span>
         <form  name="form1" action="email">
             <h3>Subscribe to our news letter!</h3>
             <label for="email"><strong>email:</strong></label>
-            <input type="text" id="email" name="text1">
-            <button type="submit" name="submit" onclick="validateEmail(document.form1.text1)">Submit</button>
+            <input type="text" id="email" name="text1" placeholder="example@email.com">
+            <button id="event-submit" type="submit" name="submit"  onclick="validateEmail(document.form1.text1)">Submit</button>
         </form>
     </section>
+    <footer>Ryan Myers, 2021</footer>
     <script src="js/mountains.js"></script>
     <script src="js/loop.js"></script>
 </body>
